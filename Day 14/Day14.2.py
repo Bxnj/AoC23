@@ -1,6 +1,6 @@
 import util as ut
 from functools import cache
-
+import time
 with open('input.txt') as my_file:
     inputArray = my_file.readlines()
 
@@ -12,7 +12,7 @@ for k in range(0, len(inputArray)):
 allBalls = []
 blocks = []
 
-
+start_time = time.time()
 for k in range(0, len(inputArray)):
     temp = []
     temp2 = []
@@ -162,3 +162,4 @@ for i in range(len(allBalls)):
     cost = len(allBalls)-i
     sol.append(cost*len(allBalls[i]))
 print(sum(sol))
+print("Finished Program in --- %s seconds ---" % (time.time() - start_time))

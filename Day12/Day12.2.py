@@ -138,7 +138,7 @@ for k in range(0, len(inputArray)):
     w = myLovelyrec(k,intervals, 0, 0, 0)
     solu.append(w)
     #print("Output for every line: " + str(w))
-    print("Finished Line: " +str(k) + " in --- %s seconds ---" % (time.time() - start_time))
+    print("Finished Line: " + str(k) + " in --- %s seconds ---" % (time.time() - start_time))
 print(solu)
 for o in solu:
     print(o)
